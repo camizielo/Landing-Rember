@@ -484,9 +484,9 @@ p {
   flex-shrink: 0;
 }
 
-/* ============================================================
+/* 
    MUCHO MÁS QUE... — bento grid
-   ============================================================ */
+    */
 .section-features {
   position: relative;
   padding: 100px 0 0;
@@ -796,15 +796,15 @@ p {
 }
 
 .mvv-block-indigo {
-  background: linear-gradient(160deg, #EEF2FF 0%, #d1daf7 100%);
+  background: #dbe1f8;
 }
 
 .mvv-block-violet {
-  background: linear-gradient(160deg, #F3EBFD 0%, #d6d5ff 100%);
+  background:  #dad8fc;
 }
 
 .mvv-block-rose {
-  background: linear-gradient(160deg, #f6e9fc 0%, #dabdfb 100%);
+  background: #e4d2f8;
 }
 
 .mvv-block h3 {
