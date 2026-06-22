@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* ============================================================
+/* 
    RESET Y BASE
-   ============================================================ */
+    */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,9 +39,9 @@ a {
   padding: 0 24px;
 }
 
-/* ============================================================
+/* 
    HEADER
-   ============================================================ */
+    */
 .header-top {
   position: fixed;
   top: 16px;
@@ -54,7 +54,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 14px 28px;
-  background: #5249E1;
+  background: #524ace;
   border-radius: 9999px;
   box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.35);
 }
@@ -110,9 +110,9 @@ a {
   transform: translateY(-1px);
 }
 
-/* ============================================================
+/* 
    HERO
-   ============================================================ */
+    */
 .hero-section {
   position: relative;
   width: 100%;
@@ -234,6 +234,21 @@ a {
   transform: translateY(-2px);
 }
 
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -4px rgba(0,0,0,0.10);
+  transition: transform 0.2s;
+  background-color: #ffffff4f;
+}
+
 .btn-ghost {
   display: inline-flex;
   align-items: center;
@@ -353,9 +368,9 @@ a {
   display: block;
 }
 
-/* ============================================================
+/* 
    SECCIONES GENERALES
-   ============================================================ */
+    */
 .section-heading {
   max-width: 700px;
   margin-bottom: 56px;
@@ -403,9 +418,8 @@ p {
   line-height: 1.6;
 }
 
-/* ============================================================
-   NUESTRA PROPUESTA — 3 cards
-   ============================================================ */
+/*  NUESTRA PROPUESTA — 3 cards
+    */
 .value-proposition {
   padding: 100px 0 110px;
   background: #F7F9FB;
@@ -702,9 +716,8 @@ p {
   background: linear-gradient(135deg, #4F46E5, #A855F7);
 }
 
-/* ============================================================
-   PROPUESTA DE VALOR
-   ============================================================ */
+/*  PROPUESTA DE VALOR
+    */
 .propuesta-valor {
   background: #ffffff;
   padding: 100px 0;
@@ -821,9 +834,9 @@ p {
   margin: 0;
 }
 
-/* ============================================================
+/* 
    CTA FINAL
-   ============================================================ */
+    */
 .section-call-to {
   padding: 0;
 }
@@ -922,9 +935,9 @@ p {
   border-radius: 9999px;
 }
 
-/* ============================================================
+/* 
    EQUIPO
-   ============================================================ */
+    */
 .team-section {
   padding: 100px 0;
   background: #F7F9FB;
@@ -971,9 +984,9 @@ p {
   font-weight: 500;
 }
 
-/* ============================================================
+/* 
    FOOTER
-   ============================================================ */
+    */
 .footer {
   background: #F7F9FB;
   border-top: 1px solid #EAEFF2;
@@ -1047,9 +1060,8 @@ p {
   color: #9898B0;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* RESPONSIVE
+    */
 @media (max-width: 1024px) {
   .container-hero {
     flex-direction: column;
@@ -1195,9 +1207,9 @@ p {
   }
 }
 
-/* ============================================================
+/* 
    ACCESIBILIDAD
-   ============================================================ */
+    */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition: none !important;
