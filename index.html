@@ -1,203 +1,372 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rember</title>
-    <link rel="stylesheet" href="diseño.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rember — Cuidado cognitivo para adultos mayores</title>
+<link rel="stylesheet" href="diseño.css">
 </head>
 <body>
+<div class="landing">
 
-    <header id="header">
-        <a href="#" class="logo">
-    <img class="logo-icon" src="img/logo-rember.png" alt="Logo de Rember">
-    <!-- Rember -->
-</a>
-<nav> 
-        <nav>
-            <a href="#info-general">Sobre Rember</a>
-            <a href="#info-especifica">Funcionalidades</a>
-            <a href="#propuesta">Propuesta de valor</a>
+    <!-- ============ HEADER ============ -->
+    <div class="header-top">
+        <div class="header-brand">
+            <img class="header-logo" src="img/logo-blanco.png" alt="Rember">
+            <span class="header-title">Rember</span>
+        </div>
+        <nav class="nav">
+            <a href="#hero">Sobre Rember</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#propuesta">Propuesta</a>
             <a href="#equipo">Equipo</a>
         </nav>
-    </header>
+        <a href="#hero" class="btn-header">Descargar app</a>
+    </div>
 
-    <section id="hero">
-    <div class="hero-decor hero-decor-1"></div>
-    <div class="hero-decor hero-decor-2"></div>
+    <!-- ============ HERO ============ -->
+    <div class="hero-section" id="hero">
+        <div class="organic-background"></div>
+        <div class="hero-decor-1"></div>
+        <div class="hero-decor-2"></div>
 
-    <div class="hero-content">
-        <img src="img/logo-rember.png" alt="Logo de Rember" class="hero-logo">
-        <h1>Rember</h1>
-        <h3>Guiamos tu memoria, cuidamos tu futuro</h3>
-        <p>Rember es una aplicación de análisis temprano que permite a las familias registrar anomalías, realizar pruebas cognitivas breves y visualizar tendencias para la detección del deterioro cognitivo en adultos mayores.</p>
-        <a href="#info-general">Conocer más</a>
+        <div class="container-hero">
+            <div class="hero-text">
+                <div class="eyebrow-pill">
+                    <span class="dot"></span>
+                    Rember · aplicación de cuidados
+                </div>
 
-        <div class="hero-badges">
-            <div class="hero-badge">
-                <span class="hero-badge-icon">📋</span>
-                <span>Registro diario</span>
+                <h1 class="hero-title">Guiamos tu memoria, cuidamos tu futuro</h1>
+
+                <p class="hero-desc">Rember es una aplicación de análisis temprano que permite a las familias registrar anomalías, realizar pruebas cognitivas breves y visualizar tendencias para la detección del deterioro cognitivo.</p>
+
+                <div class="hero-cta-row">
+                    <a href="#funcionalidades" class="btn-primary">Conocer más</a>
+                    <div class="btn-ghost">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V18C18 18.55 17.8042 19.0208 17.4125 19.4125C17.0208 19.8042 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="#C7D2FE"/></svg>
+                        Descargar app
+                    </div>
+                </div>
+
+                <div class="hero-badges">
+                    <div class="hero-badge">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V18C18 18.55 17.8042 19.0208 17.4125 19.4125C17.0208 19.8042 16.55 20 16 20H2ZM2 18H16V8H2V18ZM2 6H16V4H2V6Z" fill="#C7D2FE"/></svg>
+                        <span>Registro diario</span>
+                    </div>
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 16C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14C0 13.45 0.195833 12.9792 0.5875 12.5875C0.979167 12.1958 1.45 12 2 12C2.55 12 3.02083 12.1958 3.4125 12.5875C3.80417 12.9792 4 13.45 4 14C4 14.55 3.80417 15.0208 3.4125 15.4125C3.02083 15.8042 2.55 16 2 16ZM10 16C9.45 16 8.97917 15.8042 8.5875 15.4125C8.19583 15.0208 8 14.55 8 14C8 13.45 8.19583 12.9792 8.5875 12.5875C8.97917 12.1958 9.45 12 10 12C10.55 12 11.0208 12.1958 11.4125 12.5875C11.8042 12.9792 12 13.45 12 14C12 14.55 11.8042 15.0208 11.4125 15.4125C11.0208 15.8042 10.55 16 10 16ZM6 12C5.45 12 4.97917 11.8042 4.5875 11.4125C4.19583 11.0208 4 10.55 4 10C4 9.45 4.19583 8.97917 4.5875 8.5875C4.97917 8.19583 5.45 8 6 8C6.55 8 7.02083 8.19583 7.4125 8.5875C7.80417 8.97917 8 9.45 8 10C8 10.55 7.80417 11.0208 7.4125 11.4125C7.02083 11.8042 6.55 12 6 12ZM14 12C13.45 12 12.9792 11.8042 12.5875 11.4125C12.1958 11.0208 12 10.55 12 10C12 9.45 12.1958 8.97917 12.5875 8.5875C12.9792 8.19583 13.45 8 14 8C14.55 8 15.0208 8.19583 15.4125 8.5875C15.8042 8.97917 16 9.45 16 10C16 10.55 15.8042 11.0208 15.4125 11.4125C15.0208 11.8042 14.55 12 14 12ZM2 8C1.45 8 0.979167 7.80417 0.5875 7.4125C0.195833 7.02083 0 6.55 0 6C0 5.45 0.195833 4.97917 0.5875 4.5875C0.979167 4.19583 1.45 4 2 4C2.55 4 3.02083 4.19583 3.4125 4.5875C3.80417 4.97917 4 5.45 4 6C4 6.55 3.80417 7.02083 3.4125 7.4125C3.02083 7.80417 2.55 8 2 8ZM10 8C9.45 8 8.97917 7.80417 8.5875 7.4125C8.19583 7.02083 8 6.55 8 6C8 5.45 8.19583 4.97917 8.5875 4.5875C8.97917 4.19583 9.45 4 10 4C10.55 4 11.0208 4.19583 11.4125 4.5875C11.8042 4.97917 12 5.45 12 6C12 6.55 11.8042 7.02083 11.4125 7.4125C11.0208 7.80417 10.55 8 10 8ZM6 4C5.45 4 4.97917 3.80417 4.5875 3.4125C4.19583 3.02083 4 2.55 4 2C4 1.45 4.19583 0.979167 4.5875 0.5875C4.97917 0.195833 5.45 0 6 0C6.55 0 7.02083 0.195833 7.4125 0.5875C7.80417 0.979167 8 1.45 8 2C8 2.55 7.80417 3.02083 7.4125 3.4125C7.02083 3.80417 6.55 4 6 4ZM14 4C13.45 4 12.9792 3.80417 12.5875 3.4125C12.1958 3.02083 12 2.55 12 2C12 1.45 12.1958 0.979167 12.5875 0.5875C12.9792 0.195833 13.45 0 14 0C14.55 0 15.0208 0.195833 15.4125 0.5875C15.8042 0.979167 16 1.45 16 2C16 2.55 15.8042 3.02083 15.4125 3.4125C15.0208 3.80417 14.55 4 14 4Z" fill="#C7D2FE"/></svg>
+                        <span>Tests cognitivos</span>
+                    </div>
+                    <div class="hero-badge">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 18V16L2 14V18H0ZM4 18V12L6 10V18H4ZM8 18V10L10 12.025V18H8ZM12 18V12.025L14 10.025V18H12ZM16 18V8L18 6V18H16ZM0 12.825V10L7 3L11 7L18 0V2.825L11 9.825L7 5.825L0 12.825Z" fill="#C7D2FE"/></svg>
+                        <span>Seguimiento</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-badge">
-                <span class="hero-badge-icon">🧠</span>
-                <span>Tests cognitivos</span>
+
+            <div class="hero-mockup">
+                <div class="hero-decor-blob1"></div>
+                <div class="hero-decor-blob2"></div>
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <img src="img/mockup-app.png" alt="Pantalla de la app Rember">
+                    </div>
+                </div>
+                <div class="hero-decor-blob3"></div>
             </div>
-            <div class="hero-badge">
-                <span class="hero-badge-icon">📈</span>
-                <span>Seguimiento</span>
+        </div>
+
+        <div class="custom-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,80 C240,110 480,40 720,55 C960,70 1200,110 1440,75 L1440,120 L0,120 Z" fill="#F7F9FB"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- ============ NUESTRA PROPUESTA (3 cards) ============ -->
+    <div class="value-proposition" id="funcionalidades">
+        <div class="container">
+            <div class="section-heading center">
+                <span class="eyebrow">NUESTRA PROPUESTA</span>
+                <h2>Herramientas diseñadas para la tranquilidad familiar</h2>
+                <p class="lead">Combinamos tecnología de vanguardia con un enfoque humano para ofrecer soluciones reales en el cuidado cognitivo.</p>
+            </div>
+
+            <div class="cards-row">
+                <div class="card">
+                    <div class="icon-box icon-box-indigo">
+                        <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 30C2.175 30 1.46875 29.7062 0.88125 29.1187C0.29375 28.5312 0 27.825 0 27V6C0 5.175 0.29375 4.46875 0.88125 3.88125C1.46875 3.29375 2.175 3 3 3H9.3C9.625 2.1 10.1687 1.375 10.9312 0.825C11.6937 0.275 12.55 0 13.5 0C14.45 0 15.3063 0.275 16.0688 0.825C16.8313 1.375 17.375 2.1 17.7 3H24C24.825 3 25.5312 3.29375 26.1187 3.88125C26.7062 4.46875 27 5.175 27 6V27C27 27.825 26.7062 28.5312 26.1187 29.1187C25.5312 29.7062 24.825 30 24 30H3ZM6 24H16.5V21H6V24ZM6 18H21V15H6V18ZM6 12H21V9H6V12ZM13.5 4.875C13.825 4.875 14.0938 4.76875 14.3062 4.55625C14.5187 4.34375 14.625 4.075 14.625 3.75C14.625 3.425 14.5187 3.15625 14.3062 2.94375C14.0938 2.73125 13.825 2.625 13.5 2.625C13.175 2.625 12.9062 2.73125 12.6938 2.94375C12.4813 3.15625 12.375 3.425 12.375 3.75C12.375 4.075 12.4813 4.34375 12.6938 4.55625C12.9062 4.76875 13.175 4.875 13.5 4.875Z" fill="#4A4BD7"/></svg>
+                    </div>
+                    <h3>Registro diario</h3>
+                    <p>Documenta comportamientos, estados de ánimo y pequeños incidentes para crear un historial detallado sin esfuerzo.</p>
+                    <ul class="check-list">
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#4A4BD7"/></svg>Fácil entrada de datos</li>
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#4A4BD7"/></svg>Etiquetas inteligentes</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box icon-box-violet">
+                        <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 30V23.55C3.075 22.25 1.96875 20.7312 1.18125 18.9937C0.39375 17.2563 0 15.425 0 13.5C0 9.75 1.3125 6.5625 3.9375 3.9375C6.5625 1.3125 9.75 0 13.5 0C16.625 0 19.3937 0.91875 21.8062 2.75625C24.2188 4.59375 25.7875 6.9875 26.5125 9.9375L28.4625 17.625C28.5875 18.1 28.5 18.5312 28.2 18.9188C27.9 19.3063 27.5 19.5 27 19.5H24V24C24 24.825 23.7062 25.5312 23.1187 26.1187C22.5312 26.7062 21.825 27 21 27H18V30H4.5ZM13.5 21C13.925 21 14.2812 20.8563 14.5688 20.5688C14.8563 20.2812 15 19.925 15 19.5C15 19.075 14.8563 18.7188 14.5688 18.4312C14.2812 18.1437 13.925 18 13.5 18C13.075 18 12.7188 18.1437 12.4312 18.4312C12.1437 18.7188 12 19.075 12 19.5C12 19.925 12.1437 20.2812 12.4312 20.5688C12.7188 20.8563 13.075 21 13.5 21ZM12.375 16.2H14.6625C14.6625 15.575 14.7437 15.0687 14.9062 14.6812C15.0688 14.2937 15.4 13.825 15.9 13.275C16.35 12.775 16.7875 12.2688 17.2125 11.7563C17.6375 11.2438 17.85 10.575 17.85 9.75C17.85 8.7 17.4438 7.8125 16.6313 7.0875C15.8188 6.3625 14.8125 6 13.6125 6C12.6125 6 11.7063 6.2875 10.8938 6.8625C10.0813 7.4375 9.5125 8.1875 9.1875 9.1125L11.25 9.975C11.425 9.425 11.7312 8.98125 12.1687 8.64375C12.6062 8.30625 13.0875 8.1375 13.6125 8.1375C14.1625 8.1375 14.6187 8.2875 14.9812 8.5875C15.3438 8.8875 15.525 9.275 15.525 9.75C15.525 10.275 15.3687 10.7437 15.0562 11.1562C14.7437 11.5688 14.375 11.9875 13.95 12.4125C13.45 12.9375 13.0625 13.4625 12.7875 13.9875C12.5125 14.5125 12.375 15.25 12.375 16.2Z" fill="#5C49BD"/></svg>
+                    </div>
+                    <h3>Tests cognitivos</h3>
+                    <p>Evaluaciones breves y lúdicas basadas en estándares clínicos para medir la agilidad mental de forma regular.</p>
+                    <ul class="check-list">
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#4954BD"/></svg>Validado clínicamente</li>
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#4954BD"/></svg>Resultados inmediatos</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box icon-box-purple">
+                        <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 25.5C2.175 25.5 1.46875 25.2062 0.88125 24.6187C0.29375 24.0312 0 23.325 0 22.5C0 21.675 0.29375 20.9688 0.88125 20.3813C1.46875 19.7938 2.175 19.5 3 19.5C3.15 19.5 3.28125 19.5 3.39375 19.5C3.50625 19.5 3.625 19.525 3.75 19.575L10.575 12.75C10.525 12.625 10.5 12.5063 10.5 12.3938C10.5 12.2812 10.5 12.15 10.5 12C10.5 11.175 10.7938 10.4688 11.3813 9.88125C11.9688 9.29375 12.675 9 13.5 9C14.325 9 15.0312 9.29375 15.6187 9.88125C16.2062 10.4688 16.5 11.175 16.5 12C16.5 12.05 16.475 12.3 16.425 12.75L20.25 16.575C20.375 16.525 20.4938 16.5 20.6063 16.5C20.7188 16.5 20.85 16.5 21 16.5C21.15 16.5 21.2812 16.5 21.3937 16.5C21.5062 16.5 21.625 16.525 21.75 16.575L27.075 11.25C27.025 11.125 27 11.0063 27 10.8938C27 10.7812 27 10.65 27 10.5C27 9.675 27.2938 8.96875 27.8813 8.38125C28.4688 7.79375 29.175 7.5 30 7.5C30.825 7.5 31.5313 7.79375 32.1188 8.38125C32.7063 8.96875 33 9.675 33 10.5C33 11.325 32.7063 12.0312 32.1188 12.6187C31.5313 13.2062 30.825 13.5 30 13.5C29.85 13.5 29.7188 13.5 29.6063 13.5C29.4938 13.5 29.375 13.475 29.25 13.425L23.925 18.75C23.975 18.875 24 18.9938 24 19.1063C24 19.2188 24 19.35 24 19.5C24 20.325 23.7062 21.0312 23.1187 21.6187C22.5312 22.2062 21.825 22.5 21 22.5C20.175 22.5 19.4688 22.2062 18.8813 21.6187C18.2938 21.0312 18 20.325 18 19.5C18 19.35 18 19.2188 18 19.1063C18 18.9938 18.025 18.875 18.075 18.75L14.25 14.925C14.125 14.975 14.0063 15 13.8938 15C13.7812 15 13.65 15 13.5 15C13.45 15 13.2 14.975 12.75 14.925L5.925 21.75C5.975 21.875 6 21.9938 6 22.1063C6 22.2188 6 22.35 6 22.5C6 23.325 5.70625 24.0312 5.11875 24.6187C4.53125 25.2062 3.825 25.5 3 25.5ZM4.5 10.4625L3.5625 8.4375L1.5375 7.5L3.5625 6.5625L4.5 4.5375L5.4375 6.5625L7.4625 7.5L5.4375 8.4375L4.5 10.4625ZM21 9L19.575 5.925L16.5 4.5L19.575 3.075L21 0L22.425 3.075L25.5 4.5L22.425 5.925L21 9Z" fill="#8948BD"/></svg>
+                    </div>
+                    <h3>Seguimiento</h3>
+                    <p>Visualización de tendencias a largo plazo que ayuda a detectar patrones sutiles de deterioro cognitivo.</p>
+                    <ul class="check-list">
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#745479"/></svg>Gráficos de evolución</li>
+                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.45 10.95L11.7375 5.6625L10.6875 4.6125L6.45 8.85L4.3125 6.7125L3.2625 7.7625L6.45 10.95ZM7.5 15C6.4625 15 5.4875 14.8031 4.575 14.4094C3.6625 14.0156 2.86875 13.4812 2.19375 12.8062C1.51875 12.1312 0.984375 11.3375 0.590625 10.425C0.196875 9.5125 0 8.5375 0 7.5C0 6.4625 0.196875 5.4875 0.590625 4.575C0.984375 3.6625 1.51875 2.86875 2.19375 2.19375C2.86875 1.51875 3.6625 0.984375 4.575 0.590625C5.4875 0.196875 6.4625 0 7.5 0C8.5375 0 9.5125 0.196875 10.425 0.590625C11.3375 0.984375 12.1312 1.51875 12.8062 2.19375C13.4812 2.86875 14.0156 3.6625 14.4094 4.575C14.8031 5.4875 15 6.4625 15 7.5C15 8.5375 14.8031 9.5125 14.4094 10.425C14.0156 11.3375 13.4812 12.1312 12.8062 12.8062C12.1312 13.4812 11.3375 14.0156 10.425 14.4094C9.5125 14.8031 8.5375 15 7.5 15ZM7.5 13.5C9.175 13.5 10.5938 12.9188 11.7563 11.7563C12.9188 10.5938 13.5 9.175 13.5 7.5C13.5 5.825 12.9188 4.40625 11.7563 3.24375C10.5938 2.08125 9.175 1.5 7.5 1.5C5.825 1.5 4.40625 2.08125 3.24375 3.24375C2.08125 4.40625 1.5 5.825 1.5 7.5C1.5 9.175 2.08125 10.5938 3.24375 11.7563C4.40625 12.9188 5.825 13.5 7.5 13.5Z" fill="#745479"/></svg>Reportes exportables</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="hero-mockup">
-        <div class="phone-frame">
-            <img src="img/mockup-app.png" alt="Pantalla de la app Rember" class="phone-screen">
-        </div>
-    </div>
-</section>
-
-    <section id="info-general">
-    <h2>¿Qué es Rember?</h2>
-    <p>Rember acompaña a familias, cuidadores y profesionales en el seguimiento temprano de señales de deterioro cognitivo en adultos mayores: permite registrar cambios cotidianos, hacer pruebas cognitivas breves y visualizar la evolución en el tiempo.</p>
-
-    <h3>¿Qué problema resuelve?</h3>
-    <p>Muchas familias notan olvidos o cambios de conducta, pero no saben si son esperables por la edad o ameritan consultar a un profesional. Rember ordena esas observaciones en un registro claro y útil.</p>
-
-    <h3>¿Para quién está pensado?</h3>
-    <ul>
-        <li>Familias de adultos mayores</li>
-        <li>Cuidadores</li>
-        <li>Profesionales que trabajan con personas mayores</li>
-        <li>Instituciones geriátricas</li>
-    </ul>
-
-    <p>No busca reemplazar al médico ni dar diagnósticos, sino ser una herramienta de apoyo, registro y orientación.</p>
-</section>
-
-
-    <section id="info-especifica">
-        <h2>Funcionalidades principales</h2>
-
-        <div class="features-list">
-            <div class="feature-row">
-                <span class="feature-number">1</span>
-                <div>
-                    <h3>Registro de cambios</h3>
-                    <p>Registro de olvidos, cambios de conducta o situaciones relevantes observados en la vida cotidiana del adulto mayor.</p>
+    <!-- ============ MUCHO MÁS QUE... (bento grid) ============ -->
+    <div class="section-features" id="propuesta">
+        <div class="container">
+            <div class="features-header">
+                <div class="features-heading">
+                    <h2>Mucho más que b</h2>
+                    <p class="lead">Funcionalidades pensadas para conectar a todo el ecosistema de cuidado alrededor del adulto mayor.</p>
                 </div>
+                <a href="#equipo" class="btn-pill-dark">Conocer al equipo</a>
             </div>
-            <div class="feature-row">
-                <span class="feature-number">2</span>
-                <div>
-                    <h3>Pruebas cognitivas breves</h3>
-                    <p>Mini pruebas cognitivas con inspiración en tests médicos para evaluar el estado de la persona de forma simple.</p>
+
+            <div class="bento-grid">
+                <div class="bento main-feature">
+                    <div class="bento-top">
+                        <span class="bento-tag">CENTRALIZADO</span>
+                        <h3>Familia colaboradora</h3>
+                        <p>Todos los cuidadores en un mismo lugar. Comparte observaciones, notas y alertas en tiempo real entre familiares y profesionales.</p>
+                    </div>
+                    <div class="bento-image"></div>
                 </div>
-            </div>
-            <div class="feature-row">
-                <span class="feature-number">3</span>
-                <div>
-                    <h3>Seguimiento de tendencias</h3>
-                    <p>Visualización de la evolución a lo largo del tiempo para detectar cambios significativos de forma temprana.</p>
+
+                <div class="bento feature-3">
+                    <div class="bento-text">
+                        <h3>Recomendaciones orientativas</h3>
+                        <p>Avisos claros sobre cuándo podría ser conveniente consultar a un profesional.</p>
+                    </div>
+                    <div class="bento-icon-circle">
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 25.575V22.575H6V12.075C6 10 6.625 8.15625 7.875 6.54375C9.125 4.93125 10.75 3.875 12.75 3.375V2.325C12.75 1.7 12.9688 1.16875 13.4062 0.73125C13.8438 0.29375 14.375 0.075 15 0.075C15.625 0.075 16.1562 0.29375 16.5938 0.73125C17.0312 1.16875 17.25 1.7 17.25 2.325V3.375C19.25 3.875 20.875 4.93125 22.125 6.54375C23.375 8.15625 24 10 24 12.075V22.575H27V25.575H3ZM15 30.075C14.175 30.075 13.4688 29.7812 12.8813 29.1938C12.2938 28.6063 12 27.9 12 27.075H18C18 27.9 17.7062 28.6063 17.1187 29.1938C16.5312 29.7812 15.825 30.075 15 30.075Z" fill="white"/></svg>
+                    </div>
                 </div>
-            </div>
-            <div class="feature-row">
-                <span class="feature-number">4</span>
-                <div>
-                    <h3>Recomendaciones orientativas</h3>
-                    <p>El sistema emite recomendaciones claras sobre cuándo podría ser conveniente consultar a un profesional.</p>
-                </div>
-            </div>
-            <div class="feature-row">
-                <span class="feature-number">5</span>
-                <div>
+
+                <div class="bento feature">
+                    <div class="icon-box icon-box-indigo">
+                        <svg width="20" height="20" viewBox="0 0 226 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M101 30C100.175 30 99.4688 29.7062 98.8813 29.1187C98.2938 28.5312 98 27.825 98 27V9C98 8.175 98.2938 7.46875 98.8813 6.88125C99.4688 6.29375 100.175 6 101 6H107V3C107 2.175 107.294 1.46875 107.881 0.88125C108.469 0.29375 109.175 0 110 0H116C116.825 0 117.531 0.29375 118.119 0.88125C118.706 1.46875 119 2.175 119 3V6H125C125.825 6 126.531 6.29375 127.119 6.88125C127.706 7.46875 128 8.175 128 9V27C128 27.825 127.706 28.5312 127.119 29.1187C126.531 29.7062 125.825 30 125 30H101ZM110 6H116V3H110V6Z" fill="#4A4BD7"/></svg>
+                    </div>
                     <h3>Reportes para profesionales</h3>
-                    <p>Reportes organizados y estructurados para compartir con médicos o especialistas, facilitando los tiempos de diagnóstico.</p>
+                    <p>Reportes organizados para compartir con médicos o especialistas.</p>
+                </div>
+
+                <div class="bento feature-2">
+                    <div class="icon-box icon-box-violet2">
+                        <svg width="24" height="30" viewBox="0 0 226 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M111.425 20.325L119.9 11.85L117.763 9.7125L111.425 16.05L108.275 12.9L106.137 15.0375L111.425 20.325ZM113 30C109.525 29.125 106.656 27.1312 104.394 24.0187C102.131 20.9062 101 17.45 101 13.65V4.5L113 0L125 4.5V13.65C125 17.45 123.869 20.9062 121.606 24.0187C119.344 27.1312 116.475 29.125 113 30Z" fill="#4954BD"/></svg>
+                    </div>
+                    <h3>Uso responsable</h3>
+                    <p>No reemplaza al médico ni da diagnósticos: es una herramienta de apoyo y orientación.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="propuesta">
-        <h2>Propuesta de valor</h2>
-        <p>Rember ofrece una solución integral y profesional para ayudar y organizar a las familias de personas mayores, diferenciándose de las aplicaciones de "entrenamiento mental" al enfocarse en el registro clínico y la interpretación de cambios conductuales desde sus primeras señales.</p>
+        <div class="bottom-wave">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C240,80 480,10 720,30 C960,50 1200,0 1440,40 L1440,90 L0,90 Z" fill="#F7F9FB"></path>
+            </svg>
+        </div>
+    </div>
 
-        <div class="propuesta-grid">
-            <div class="propuesta-card">
-                <h3>Detección precoz</h3>
-                <p>Herramientas diseñadas para identificar signos de alerta antes de que el deterioro sea severo.</p>
-            </div>
-            <div class="propuesta-card">
-                <h3>Soporte al cuidador</h3>
-                <p>Interfaz pensada para reducir la incertidumbre familiar y la carga emocional del cuidador.</p>
-            </div>
-            <div class="propuesta-card">
-                <h3>Integración médica</h3>
-                <p>Reportes técnicos que facilitan el trabajo de los profesionales de la salud, optimizando los tiempos de diagnóstico.</p>
+    <!-- ============ SOBRE EL PROYECTO ============ -->
+    <div class="about-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-block">
+                    <span class="eyebrow">Sobre el proyecto</span>
+                    <h3>¿Qué problema resuelve?</h3>
+                    <p>Muchas familias notan olvidos o cambios de conducta, pero no saben si son esperables por la edad o ameritan consultar a un profesional. Rember ordena esas observaciones en un registro claro y útil.</p>
+                </div>
+                <div class="info-block">
+                    <h3>¿Para quién está pensado?</h3>
+                    <ul class="dot-list">
+                        <li>Familias de adultos mayores</li>
+                        <li>Cuidadores</li>
+                        <li>Profesionales que trabajan con personas mayores</li>
+                        <li>Instituciones geriátricas</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
 
-        <h3>Misión</h3>
-        <p>Proporcionar herramientas tecnológicas confiables para la detección temprana y el seguimiento del deterioro cognitivo, facilitando la labor de familiares y cuidadores a través de datos precisos y apoyo en situaciones de suma importancia.</p>
-
-        <h3>Visión</h3>
-        <p>Consolidarnos para el año 2028 como la plataforma líder en el soporte preventivo de la salud cognitiva en Argentina, expandiendo nuestro impacto a organizaciones de salud para transformar el cuidado de los adultos mayores en un proceso más organizado y humano.</p>
-
-        <h3>Valores</h3>
-        <ul>
-            <li><strong>Empatía:</strong> Priorizamos el trato digno hacia quienes transitan un deterioro cognitivo.</li>
-            <li><strong>Responsabilidad:</strong> Entendemos la carga emocional del cuidador y buscamos alivianarla.</li>
-            <li><strong>Rigor:</strong> Mantenemos un enfoque serio y cuidado en la comunicación de posibles cuadros de salud.</li>
-        </ul>
-
-        <h3>Modelo de negocio</h3>
-        <p>Estructura freemium: la mayoría de las funciones son gratuitas. El plan premium incluye análisis avanzados y la posibilidad de agregar más personas al grupo de seguimiento.</p>
-    </section>
-
-    <section id="equipo">
-        <h2>Equipo</h2>
-
-        <div class="team-grid">
-       
-             <div class="team-card">
-                <img class="team-photo" src="img/vickyimg.jpg" alt="Victoria Tandeter">
-                <h3>Victoria Tandeter</h3>
-                <p class="team-role">Project Leader</p>
-                <p class="team-role">Full stack</p>
-                <p class="team-role">Front-end</p> 
+    <!-- ============ PROPUESTA DE VALOR (misión, visión, valores) ============ -->
+    <div class="propuesta-valor">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">Propuesta de valor</span>
+                <h2>Una solución integral y profesional</h2>
+                <p class="lead">Nos diferenciamos de las apps de "entrenamiento mental" al enfocarnos en el registro clínico y la interpretación de cambios conductuales desde sus primeras señales.</p>
             </div>
-            <div class="team-card">
-                <div class="team-photo"></div>
-                <h3>Camila Zielonka</h3>
-                <p class="team-role">Designer</p>
-                <p class="team-role">Front-end</p>          
+
+            <div class="cards-row cards-row-3">
+                <div class="mini-card mini-card-indigo">
+                    <div class="mini-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L4 5V11C4 16.55 7.84 21.74 12 23C16.16 21.74 20 16.55 20 11V5L12 2Z" stroke="#4A4BD7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="#4A4BD7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Detección precoz</h3>
+                    <p>Herramientas diseñadas para identificar signos de alerta antes de que el deterioro sea severo.</p>
+                </div>
+                <div class="mini-card mini-card-violet">
+                    <div class="mini-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61C19.32 3.04 17.06 2.49 15 3.15C13.86 3.51 12.83 4.18 12 5.09C11.17 4.18 10.14 3.51 9 3.15C6.94 2.49 4.68 3.04 3.16 4.61C1.5 6.32 1.02 8.96 2 11.16C2.5 12.3 3.32 13.43 4.41 14.5L12 22L19.59 14.5C20.68 13.43 21.5 12.3 22 11.16C22.98 8.96 22.5 6.32 20.84 4.61Z" stroke="#7879db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Soporte al cuidador</h3>
+                    <p>Interfaz pensada para reducir la incertidumbre familiar y la carga emocional del cuidador.</p>
+                </div>
+                <div class="mini-card mini-card-rose">
+                    <div class="mini-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 2H15M12 14C13.66 14 15 12.66 15 11V5H9V11C9 12.66 10.34 14 12 14ZM12 14V17M8 21H16M12 17C9.79 17 8 15.21 8 13" stroke="#9d6ec9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Integración médica</h3>
+                    <p>Reportes técnicos que facilitan el trabajo de los profesionales de la salud.</p>
+                </div>
             </div>
-            <div class="team-card">
-                <div class="team-photo"></div>
-                <h3>Lucas Roitman</h3>
-                <p class="team-role">Back-end</p>
+
+            <div class="mvv-grid">
+                <div class="mvv-block mvv-block-indigo">
+                    <span class="mvv-icon">🎯</span>
+                    <h3>Misión</h3>
+                    <p>Proporcionar herramientas tecnológicas confiables para la detección temprana y el seguimiento del deterioro cognitivo, facilitando la labor de familiares y cuidadores.</p>
+                </div>
+                <div class="mvv-block mvv-block-violet">
+                    <span class="mvv-icon">🔭</span>
+                    <h3>Visión</h3>
+                    <p>C.</p>
+                </div>
+                <div class="mvv-block mvv-block-rose">
+                    <span class="mvv-icon">💜</span>
+                    <h3>Valores</h3>
+                    <ul class="dot-list">
+                        <li><strong>Empatía:</strong> trato digno hacia quienes transitan un deterioro cognitivo.</li>
+                        <li><strong>Responsabilidad:</strong> aliviar la carga emocional del cuidador.</li>
+                        <li><strong>Rigor:</strong> comunicación seria y cuidada de la salud.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="team-card">
-                <div class="team-photo"></div>
-                <h3>Canela Ledezma</h3>
-                <p class="team-role">Project coordinator</p>
-                <!-- <p class="team-role">Tester QA</p> -->
+
+            <div class="modelo-card">
+                <h3>Modelo de negocio</h3>
+                <p>Estructura freemium: la mayoría de las funciones son gratuitas. El plan premium incluye análisis avanzados y la posibilidad de agregar más personas al grupo de seguimiento.</p>
             </div>
-        
         </div>
-    </section>
+    </div>
 
-    <div class="logo-divider">
-    <img src="img/logo-rember.png" alt="Logo de Rember" class="logo-divider-img">
-    <span class="logo-divider-name">Rember</span>
-    <span class="logo-divider-tagline">Guiamos tu memoria, cuidamos tu futuro.</span>
-</div>
+    <!-- ============ CTA FINAL ============ -->
+    <div class="section-call-to">
+        <div class="background-shadow">
+            <div class="cta-wave-top">
+                <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 C240,55 480,5 720,20 C960,35 1200,55 1440,25 L1440,0 L0,0 Z" fill="#F7F9FB"></path>
+                </svg>
+            </div>
+            <div class="cta-row">
+                <div class="cta-text">
+                    <h2>Comienza a cuidar hoy el futuro de tu familia</h2>
+                    <p>Únete a más de 5,000 familias que ya confían en Rember para el seguimiento cognitivo de sus seres queridos.</p>
+                    <div class="hero-cta-row">
+                        <a href="#hero" class="btn-primary">Descargar app</a>
+                        <a href="#equipo" class="btn-outline">Conocer al equipo</a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="img/logo-blanco.png" alt="Manos cuidando">
+                </div>
+            </div>
+            <div class="cta-wave-bottom">
+                <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 C240,5 480,55 720,40 C960,25 1200,5 1440,35 L1440,60 L0,60 Z" fill="#F7F9FB"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
 
-<section id="info-especifica">
+    <!-- ============ EQUIPO ============ -->
+    <div class="team-section" id="equipo">
+        <div class="container">
+            <div class="section-heading center">
+                <span class="eyebrow">Quiénes somos</span>
+                <h2>Equipo</h2>
+            </div>
 
-    <footer>
-        <p>Rember —  Escuela ORT Almagro</p>
-        <p>Esta aplicación no busca reemplazar al médico ni dar diagnósticos, sino funcionar como una herramienta de apoyo, registro y orientación.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img class="team-photo" src="img/vickyimg.jpg" alt="Victoria Tandeter">
+                    <h3>Victoria Tandeter</h3>
+                    <p class="team-role">Project Leader</p>
+                    <p class="team-role">Full stack</p>
+                    <p class="team-role">Front-end</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"></div>
+                    <h3>Camila Zielonka</h3>
+                    <p class="team-role">Designer</p>
+                    <p class="team-role">Front-end</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"></div>
+                    <h3>Lucas Roitman</h3>
+                    <p class="team-role">Back-end</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"></div>
+                    <h3>Canela Ledezma</h3>
+                    <p class="team-role">Project coordinator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-row">
+                        <img class="footer-logo" src="img/rember-locoConFondo.png" alt="Rember">
+                        <span class="footer-name">Rember</span>
+                    </div>
+                    <p>Proyecto final — Escuela ORT Almagro. Una herramienta de apoyo, registro y orientación para el cuidado cognitivo de adultos mayores.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <a href="#funcionalidades">Funcionalidades</a>
+                    <a href="#propuesta">Propuesta de valor</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Equipo</h4>
+                    <a href="#equipo">Conocer al equipo</a>
+                    <a href="#hero">Sobre el proyecto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Esta aplicación no busca reemplazar al médico ni dar diagnósticos.</p>
+            </div>
+        </div>
     </footer>
 
+</div>
 </body>
 </html>
