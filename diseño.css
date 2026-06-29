@@ -579,6 +579,12 @@ p {
   background: linear-gradient(135deg, #EEF2FF, #E9D5FF);
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -4px rgba(0,0,0,0.10);
 }
+.bento-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
 
 .feature-3 {
   grid-column: 3 / 5;
