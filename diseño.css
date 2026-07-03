@@ -327,7 +327,7 @@ a {
   border: 7px solid rgba(49, 46, 129, 0.30);
   background: #1E1B4B;
   box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
-  padding: 20px 14px;
+  padding: 10px 7px;
 }
 
 .phone-notch {
@@ -345,6 +345,8 @@ a {
   border-radius: 30px;
   overflow: hidden;
   background: #FFFFFF;
+  margin-top: -27px
+
 }
 
 .phone-screen img {
@@ -352,6 +354,7 @@ a {
   display: block;
   aspect-ratio: 9 / 18.5;
   object-fit: cover;
+
 }
 
 /* Ola al final del hero */
