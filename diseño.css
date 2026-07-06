@@ -777,6 +777,7 @@ p {
   padding: 28px 26px;
   border: 1px solid rgba(112, 115, 255, 0.08);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: -10px;
 }
 
 .prop-card:hover {
@@ -845,7 +846,7 @@ p {
 }
 
 
-/* ============================================================
+/* 
    CTA FINAL
     */
 .section-call-to {
@@ -1221,11 +1222,127 @@ p {
 /* 
    ACCESIBILIDAD
     */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    transition: none;
-    animation: none;
+@media (max-width: 640px) {
+  /* Header */
+  .header-top {
+    padding: 10px 16px;
+    top: 10px;
+    width: calc(100% - 24px);
   }
+
+  .nav { display: none; }
+  .header-title { font-size: 15px; }
+  .header-logo { width: 28px; height: 28px; }
+  .btn-header { padding: 7px 14px; font-size: 12px; }
+  .custom-wave 
+  {
+    margin-top:100px;
+  }
+
+  /* Hero */
+  .hero-section { 
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .hero-mockup {
+  display: none;
+}
+
+  .container-hero {
+    gap: 32px;
+    padding: 0 16px 60px;
+  }
+
+  .hero-title { font-size: 28px; letter-spacing: -0.8px; margin-bottom: 14px; }
+  .hero-desc { font-size: 14.5px; margin-bottom: 20px; }
+  .eyebrow-pill { font-size: 12px; padding: 6px 12px; margin-bottom: 14px; }
+  .btn-primary { font-size: 14px; padding: 12px 22px; }
+  .btn-secondary { font-size: 13px; padding: 11px 18px; }
+  .hero-cta-row { gap: 10px; margin-bottom: 18px; }
+  .hero-badges { gap: 8px; }
+  .hero-badge { font-size: 12px; padding: 6px 11px; }
+  .phone-frame { width: 175px; }
+
+
+  /* General */
+  .container { padding: 0 16px; }
+  h2 { font-size: 22px; letter-spacing: -0.5px; }
+  h3 { font-size: 15px; }
+  p { font-size: 14px; }
+  .lead { font-size: 14.5px; }
+  .section-heading { margin-bottom: 28px; }
+
+  /* About */
+  .about-section { padding: 48px 0; }
+  .info-grid { gap: 20px; }
+  .info-h2 { font-size: 22px; margin-bottom: 10px; }
+  .info-block > p { font-size: 14px; }
+  .info-card-simple { padding: 22px 18px; border-radius: 18px; }
+  .info-card-simple h3 { font-size: 15px; margin-bottom: 14px; }
+  .dot-list { gap: 12px; }
+  .dot-list li { font-size: 13.5px; }
+
+  /* Nuestra propuesta */
+  .value-proposition { padding: 48px 0 56px; }
+  .cards-row { gap: 14px; }
+  .card { padding: 22px 18px; border-radius: 20px; }
+  .card h3 { font-size: 17px; }
+  .card p { font-size: 13.5px; }
+  .icon-box { width: 48px; height: 48px; border-radius: 12px; margin-bottom: 14px; }
+
+  /* Bento */
+  .section-features { padding-top: 40px; }
+  .features-header { flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
+  .features-heading h2 { font-size: 20px; }
+  .bento-grid { grid-template-columns: 1fr; gap: 12px; padding-bottom: 48px; }
+  .main-feature, .feature-3, .feature, .feature-2 { grid-column: 1 / 2; }
+  .main-feature { padding: 26px 20px; border-radius: 22px; }
+  .main-feature h3 { font-size: 19px; }
+  .main-feature p { font-size: 13.5px; }
+  .bento-image { height: 150px; margin-top: 14px; }
+  .feature-3 { padding: 22px 18px; border-radius: 22px; flex-direction: column; gap: 14px; }
+  .bento-text h3 { font-size: 16px; }
+  .bento-icon-circle { width: 56px; height: 56px; }
+  .feature, .feature-2 { padding: 26px 18px; border-radius: 22px; }
+
+  /* CTA */
+  .background-shadow { padding: 55px 16px; }
+  .cta-row { flex-direction: column; text-align: center; gap: 20px; padding: 18px 0; }
+  .cta-text { text-align: center; max-width: 100%; }
+  .cta-text h2 { font-size: 20px; }
+  .cta-text p { font-size: 13.5px; }
+  .cta-text .hero-cta-row { justify-content: center; flex-direction: column; }
+  .btn-outline { font-size: 14px; padding: 13px 24px; }
+  .cta-image img { width: 100px; }
+
+  /* Propuesta de valor */
+  .propuesta-valor { padding: 48px 0; }
+  .propuesta-6-grid { grid-template-columns: 1fr; gap: 10px; margin-bottom: 16px; }
+  .prop-card { padding: 18px 16px; border-radius: 14px; }
+  .prop-card h3 { font-size: 14.5px; margin-bottom: 6px; }
+  .prop-card p { font-size: 13px; }
+  .prop-icon { width: 32px; height: 32px; border-radius: 10px; margin-bottom: 12px; }
+  .modelo-card { padding: 18px 16px; border-radius: 14px; }
+  .modelo-card h3 { font-size: 14.5px; }
+  .modelo-card p { font-size: 13px; }
+
+  /* Equipo */
+  .team-section { padding: 48px 0; }
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .team-card { padding: 20px 12px 16px; border-radius: 18px; }
+  .team-photo { width: 52px; height: 52px; margin-bottom: 10px; }
+  .team-card h3 { font-size: 12.5px; }
+  .team-role { font-size: 11px; }
+
+  /* Footer */
+  .footer { padding: 40px 0 24px; }
+  .footer-top { gap: 24px; margin-bottom: 28px; }
+  .footer-name { font-size: 17px; }
+  .footer-brand p { font-size: 13px; }
+  .footer-col h4 { font-size: 13px; margin-bottom: 10px; }
+  .footer-col a { font-size: 13px; margin-bottom: 8px; }
+  .footer-bottom { padding-top: 18px; }
 }
 
 :focus-visible {
