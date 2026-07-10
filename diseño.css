@@ -351,6 +351,7 @@ a {
 
 .phone-screen img {
   width: 100%;
+  height: 100%;
   display: block;
   aspect-ratio: 9 / 18.5;
   object-fit: cover;
@@ -425,7 +426,7 @@ p {
     */
 .value-proposition {
   padding: 100px 0 110px;
-  background: #F7F9FB;
+  background: #ede4f0bd;
 }
 
 .cards-row {
@@ -951,7 +952,7 @@ p {
     */
 .team-section {
   padding: 100px 0;
-  background: #F7F9FB;
+  background: #f3eaf6aa;
 }
 
 .team-grid {
